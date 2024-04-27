@@ -25,8 +25,8 @@ public class UsuarioServiceTest {
     public void crearUsuarioTest(){
         //Arrange
         Usuario usuario = new Usuario();
-        usuario.setNombreCompleto("Jorge Miranda");
-        usuario.setCorreo("jorg.sanchezm@prueba.cl");
+        usuario.setNombreCompleto("Jorge Sanchez");
+        usuario.setCorreo("jorg.ssanm@prueba.cl");
         usuario.setContrasena("1234");
         usuario.setDirecciones("La pinata 1234 Pudahuel");
 
@@ -36,8 +36,8 @@ public class UsuarioServiceTest {
         Usuario resultado = usuarioServiceImpl.crearUsuario(usuario);
 
         //Assert
-        assertEquals("Jorge Miranda", resultado.getNombreCompleto());
-        assertEquals("jorg.sanchezm@prueba.cl", resultado.getCorreo());
+        assertEquals("Jorge Sanchez", resultado.getNombreCompleto());
+        assertEquals("jorg.ssanm@prueba.cl", resultado.getCorreo());
         assertEquals("1234", resultado.getContrasena());
         assertEquals("La pinata 1234 Pudahuel", resultado.getDirecciones());
 

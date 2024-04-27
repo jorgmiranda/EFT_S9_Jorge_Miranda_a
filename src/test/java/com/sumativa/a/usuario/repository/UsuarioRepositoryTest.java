@@ -20,16 +20,16 @@ public class UsuarioRepositoryTest {
     public void crearUsuario(){
         // Arrange
         Usuario usuario = new Usuario();
-        usuario.setNombreCompleto("Segundo Miranda");
-        usuario.setCorreo("seg.mir@prueba.cl");
+        usuario.setNombreCompleto("Segundo Tercero");
+        usuario.setCorreo("seg.ter@prueba.cl");
         usuario.setContrasena("456");
         usuario.setDirecciones("La pinata 4321 Pudahuel");
 
         //Act
         Usuario resultado = usuarioRepository.save(usuario);
         assertNotNull(resultado.getId());
-        assertEquals("Segundo Miranda", resultado.getNombreCompleto());
-        assertEquals("seg.mir@prueba.cl", resultado.getCorreo());
+        assertEquals("Segundo Tercero", resultado.getNombreCompleto());
+        assertEquals("seg.ter@prueba.cl", resultado.getCorreo());
         assertEquals("456", resultado.getContrasena());
         assertEquals("La pinata 4321 Pudahuel", resultado.getDirecciones());
     }
