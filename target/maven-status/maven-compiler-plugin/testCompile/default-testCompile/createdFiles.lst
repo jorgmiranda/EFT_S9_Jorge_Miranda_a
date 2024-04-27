@@ -1,3 +1,5 @@
+com\sumativa\a\usuario\repository\RolRepositoryTest.class
+com\sumativa\a\usuario\repository\UsuarioRepositoryTest.class
 com\sumativa\a\usuario\service\UsuarioServiceTest.class
 com\sumativa\a\usuario\UsuarioApplicationTests.class
 com\sumativa\a\usuario\controller\RolControllerTest.class
